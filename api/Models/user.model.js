@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     avatar: {
       type: String,
       default:
-        "https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png",
+        "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=626&ext=jpg&ga=GA1.1.492501332.1708777309&semt=ais",
     },
   },
   { timestamps: true }
