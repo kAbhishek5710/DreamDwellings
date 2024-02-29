@@ -6,6 +6,7 @@ import SignUp from "./pages/signUp/SignUp";
 import About from "./pages/about/About";
 import Profile from "./pages/profile/Profile";
 import Header from "./components/header/Header";
+import PrivateRoute from "./components/privateRoute";
 
 export default function App() {
   return (
@@ -16,7 +17,9 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route element={<PrivateRoute />}>
+          <Route path="/profile" element={<Profile />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
