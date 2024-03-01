@@ -18,8 +18,7 @@ const userSchema = new mongoose.Schema(
     },
     avatar: {
       type: String,
-      default:
-        "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?size=626&ext=jpg&ga=GA1.1.492501332.1708777309&semt=ais",
+      default: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
     },
   },
   { timestamps: true }
