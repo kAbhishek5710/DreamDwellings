@@ -16,15 +16,15 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resOffer = await fetch("/api/listing/get?offer=true&limit=4");
+        const resOffer = await fetch("/api/listing/get?offer=true&limit=6");
         const dataOffer = await resOffer.json();
         setOfferListings(dataOffer);
 
-        const resRent = await fetch("/api/listing/get?type=rent&limit=4");
+        const resRent = await fetch("/api/listing/get?type=rent&limit=6");
         const dataRent = await resRent.json();
         setRentListings(dataRent);
 
-        const resSale = await fetch("/api/listing/get?type=sale&limit=4");
+        const resSale = await fetch("/api/listing/get?type=sale&limit=6");
         const dataSale = await resSale.json();
         setSaleListings(dataSale);
       } catch (err) {
